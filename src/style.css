@@ -1,6 +1,24 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
-
+@font-face {
+    font-family: 'Pixelboy';
+    src: url('/src/Pixeboy-z8XGD.ttf') format('truetype');
+}
+.content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
 .header {
-    font-family: 'Roboto';
+    font-family: 'Pixelboy', sans-serif;
+    font-size: 48px;
+    display: inherit;
+    justify-content: center;
+    width: 100%;
+    background-color: #313552;
+}
+.header>p{
+    margin: 1rem;
+    color: #eee6ce;
 }
