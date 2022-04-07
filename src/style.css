@@ -22,3 +22,15 @@
     margin: 1rem;
     color: #eee6ce;
 }
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tabs>div{
+    width: 8rem;
+    font-family: 'Pixelboy';
+    font-size: 30px;
+    text-align: center;
+}
