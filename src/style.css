@@ -56,10 +56,11 @@
 
 .home-container {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     background-color: #313552;
     flex-direction: column;
+    height: 100%;
 }
 
 .home-content {
@@ -67,7 +68,7 @@
     font-family: 'Pixelboy';
     font-size: 24px;
     box-shadow: var(--pixel-border);
-    margin: 3rem;
+    margin: 1rem;
     padding: 1rem;
     background-color: #eee6ce;
 }
@@ -78,7 +79,7 @@
     font-family: 'Pixelboy';
     font-size: 24px;
     box-shadow: var(--pixel-border);
-    margin: 3rem;
+    margin: 1rem;
     padding: 1rem;
     background-color: #eee6ce;
 }
@@ -88,7 +89,7 @@
     font-family: 'Pixelboy';
     font-size: 24px;
     box-shadow: var(--pixel-border);
-    margin: 3rem;
+    margin: 1rem;
     padding: 1rem;
     background-color: #eee6ce;
 }
