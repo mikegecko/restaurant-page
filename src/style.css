@@ -31,7 +31,7 @@
 
 .header>p {
     margin: 1rem;
-    color: #eee6ce;
+    color: #b8405e;
 }
 
 .tabs {
@@ -52,6 +52,9 @@
     box-shadow: var(--pixel-border);
     /*Temporary border*/
     cursor: pointer;
+}
+.tabs>div:hover{
+    color:#2eb086 ;
 }
 
 .home-container {
