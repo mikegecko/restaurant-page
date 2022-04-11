@@ -12,6 +12,24 @@
         0 5px 0 0 black;
 }
 
+img {
+    position: absolute;
+    box-sizing: border-box;
+    width: 300;
+    height: auto;
+    top: 8rem;
+}
+
+.img-left {
+    left: 0;
+}
+
+.img-right {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: 0;
+}
+
 .content {
     display: flex;
     width: 100vw;
@@ -53,8 +71,9 @@
     /*Temporary border*/
     cursor: pointer;
 }
-.tabs>div:hover{
-    color:#2eb086 ;
+
+.tabs>div:hover {
+    color: #2eb086;
 }
 
 .home-container {
@@ -86,7 +105,8 @@
     padding: 1rem;
     background-color: #eee6ce;
 }
-.home-location{
+
+.home-location {
     text-align: center;
     width: 40%;
     font-family: 'Pixelboy';
