@@ -1,10 +1,10 @@
 //Imports
 import './style.css';
 import SidebarImage from './spaceinvaders-sidebar.png';
-const content = document.getElementById('content');
 
-function pageLoad(){
-    const element = document.createElement('div');
+
+function pageLoadModule(){
+    const content = document.getElementById('content');
     console.log('Loaded');
     const sidebarL = new Image();
     const sidebarR = new Image();
@@ -12,8 +12,8 @@ function pageLoad(){
     sidebarR.src = SidebarImage;
     sidebarL.classList.add('img-left');
     sidebarR.classList.add('img-right');
-    element.appendChild(sidebarL);
-    element.appendChild(sidebarR);
-    return element;
+    content.appendChild(sidebarL);
+    content.appendChild(sidebarR);
+    return;
 }
-content.appendChild(pageLoad());
+pageLoadModule();
