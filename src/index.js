@@ -1,11 +1,12 @@
 //Imports
 import './style.css';
 import SidebarImage from './spaceinvaders-sidebar.png';
-import {homeModule} from './homeModule';
+import {
+    homeModule
+} from './homeModule';
+const content = document.getElementById('content');
 
-
-function pageLoadModule(){
-    const content = document.getElementById('content');
+function pageLoadModule() {
     //Create header
     const header = document.createElement('div');
     header.classList.add('header');
@@ -39,27 +40,29 @@ function pageLoadModule(){
     content.appendChild(sidebarL);
     content.appendChild(sidebarR);
     console.log('Loaded');
+
+    homeTab.addEventListener('click', moduleController);
+    menuTab.addEventListener('click', moduleController);
+    contactTab.addEventListener('click', moduleController);
     return;
 }
-pageLoadModule();
-const homeTab = document.getElementById('home');
-const menuTab = document.getElementById('menu');
-const contactTab = document.getElementById('contact');
-homeTab.addEventListener('click', moduleController);
-menuTab.addEventListener('click', moduleController);
-contactTab.addEventListener('click', moduleController);
 
-function moduleController (e){
-    const content = document.getElementById('content');
+pageLoadModule();
+content.appendChild(homeModule());
+
+function moduleController(e) {
     //Wipes existing children from content div
+    while (content.lastElementChild) {
+        content.removeChild(content.lastElementChild);
+    }
+    //This is hacky...
+    pageLoadModule();
     //Calls appropriate module and appends it to DOM
-    if(e.target.id == 'home'){
+    if (e.target.id == 'home') {
         content.appendChild(homeModule());
-    }
-    else if(e.target.id == 'menu'){
+    } else if (e.target.id == 'menu') {
         console.log('load menu');
-    }
-    else if(e.target.id == 'contact'){
+    } else if (e.target.id == 'contact') {
         console.log('load contact');
     }
 }
