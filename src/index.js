@@ -1,6 +1,7 @@
 //Imports
 import './style.css';
 import SidebarImage from './spaceinvaders-sidebar.png';
+import {homeModule} from './homeModule';
 
 
 function pageLoadModule(){
@@ -41,3 +42,24 @@ function pageLoadModule(){
     return;
 }
 pageLoadModule();
+const homeTab = document.getElementById('home');
+const menuTab = document.getElementById('menu');
+const contactTab = document.getElementById('contact');
+homeTab.addEventListener('click', moduleController);
+menuTab.addEventListener('click', moduleController);
+contactTab.addEventListener('click', moduleController);
+
+function moduleController (e){
+    const content = document.getElementById('content');
+    //Wipes existing children from content div
+    //Calls appropriate module and appends it to DOM
+    if(e.target.id == 'home'){
+        content.appendChild(homeModule());
+    }
+    else if(e.target.id == 'menu'){
+        console.log('load menu');
+    }
+    else if(e.target.id == 'contact'){
+        console.log('load contact');
+    }
+}
