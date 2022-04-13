@@ -4,6 +4,9 @@ import SidebarImage from './spaceinvaders-sidebar.png';
 import {
     homeModule
 } from './homeModule';
+import {
+    menuModule
+} from './menuModule';
 const content = document.getElementById('content');
 
 function pageLoadModule() {
@@ -60,9 +63,11 @@ function moduleController(e) {
     //Calls appropriate module and appends it to DOM
     if (e.target.id == 'home') {
         content.appendChild(homeModule());
-    } else if (e.target.id == 'menu') {
-        console.log('load menu');
-    } else if (e.target.id == 'contact') {
+    }
+    if (e.target.id == 'menu') {
+        content.appendChild(menuModule());
+    }
+    if (e.target.id == 'contact') {
         console.log('load contact');
     }
 }
