@@ -9,6 +9,10 @@ import {
 } from './menuModule';
 const content = document.getElementById('content');
 
+//TODO: Dont forget to remove devtool: inlinesourcemap from webpack config
+//TODO: Create a footer
+//TODO: Complete contact page
+
 function pageLoadModule() {
     //Create header
     const header = document.createElement('div');
