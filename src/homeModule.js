@@ -3,7 +3,7 @@ const homeModule = () => {
     const homeContent = document.createElement('div');
     const homeHours = document.createElement('div');
     const homeLocation = document.createElement('div');
-    homeContainer.classList.add('home-container');
+    homeContainer.classList.add('page-container');
     homeContent.classList.add('home-content');
     homeHours.classList.add('home-hours');
     homeLocation.classList.add('home-location');

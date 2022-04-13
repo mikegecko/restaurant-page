@@ -80,8 +80,17 @@ img {
 .tabs>div:hover {
     color: #2eb086;
 }
-
-.home-container {
+.menu-box{
+    width: 40%;
+    font-family: 'Pixelboy';
+    font-size: 24px;
+    box-shadow: var(--pixel-border);
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #eee6ce;
+    z-index: 3;
+}
+.page-container {
     display: flex;
     /* justify-content: center; */
     align-items: center;
