@@ -13,6 +13,7 @@ const homeModule = () => {
     hourHeader.textContent = "Hours";
     homeHours.appendChild(hourHeader);
     //Weekday hours - maybe there's a better way to do this?
+    //TODO: Refactor into an array
     const sunday = document.createElement('p');
     const monday = document.createElement('p');
     const tuesday = document.createElement('p');
