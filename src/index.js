@@ -7,6 +7,9 @@ import {
 import {
     menuModule
 } from './menuModule';
+import {
+    contactModule
+} from './contactModule';
 const content = document.getElementById('content');
 
 //TODO: Dont forget to remove devtool: inlinesourcemap from webpack config
@@ -56,6 +59,7 @@ function pageLoadModule() {
 
 pageLoadModule();
 //content.appendChild(homeModule());
+content.appendChild(contactModule());
 
 function moduleController(e) {
     //Wipes existing children from content div
@@ -72,6 +76,6 @@ function moduleController(e) {
         content.appendChild(menuModule());
     }
     if (e.target.id == 'contact') {
-        console.log('load contact');
+        content.appendChild(contactModule());
     }
 }
