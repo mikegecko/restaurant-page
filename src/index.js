@@ -58,8 +58,8 @@ function pageLoadModule() {
 }
 
 pageLoadModule();
-//content.appendChild(homeModule());
-content.appendChild(contactModule());
+content.appendChild(homeModule());
+
 
 function moduleController(e) {
     //Wipes existing children from content div
